@@ -56,7 +56,7 @@ function Interview__QA(props) {
           <div className="flex items-center justify-center p-5 aspect-square w-[4.5rem] h-[4.5rem] bg-[#FF004D] playfair-display-900 text-white text-2xl">
             R<sup>{intervieweeId}</sup>:
           </div>
-          <div className="flex playfair-display-400 text-lg leading-7 mb-8 bg-black text-white p-4l sm:w-full">
+          <div className="flex playfair-display-400 text-lg leading-7 mb-8 bg-black text-white p-4 sm:w-full">
             {answer}
           </div>
         </div>
