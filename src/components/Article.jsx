@@ -9,8 +9,8 @@ function Article__Header(props) {
 
   return (
     <div className="flex flex-col items-center">
-      <img src={imgSrc} width="980" height="634" alt={imgAlt} className="max-w-[58rem]" />
-      <span className="fig-caption -rotate-45 border border-t-[2px] border-[#FF004D] w-1/4 sm:w-1/12 relative mb-11" />
+      <img src={imgSrc} width="980" height="634" alt={imgAlt} className="sm:max-w-[58rem]" />
+      <span className="fig-caption -rotate-45 border border-t-[2px] border-[#FF004D] w-1/4 w-1/12 relative mb-11" />
       <h3 className="oswald-600 text-[#FF004D] mx-[27%] sm:mx-[32%] uppercase text-center text-[22px] sm:text-5xl text-pretty leading-6 tracking-tighter">
         {title}
       </h3>
@@ -46,16 +46,16 @@ function Interview__QA(props) {
   const { question, answer, intervieweeId } = props;
 
   return (
-    <div className="flex flex-col justify-end px-5 h-dvh">
+    <div className="flex flex-col justify-end px-5 h-dvh sm:w-[53rem]">
       <div className="flex flex-col justify-items-start">
         <div className="flex flex-col sm:flex-row">
-          <div className="flex items-center justify-center p-5 aspect-square w-fit h-fit bg-[#FF004D] playfair-display-900 text-white text-2xl">
+          <div className="flex items-center justify-center p-5 aspect-square w-[4.5rem] h-[4.5rem] bg-[#FF004D] playfair-display-900 text-white text-2xl">
             P:
           </div>
           <div className="playfair-display-400 text-lg leading-7 mb-5 bg-white p-4">{question}</div>
         </div>
-        <div className="flex flex-col sm:flex-row ml-16">
-          <div className="flex items-center justify-center p-5 aspect-square w-fit h-fit bg-[#FF004D] playfair-display-900 text-white text-2xl">
+        <div className="flex flex-col sm:flex-row sm:pl-[4.5rem]">
+          <div className="flex items-center justify-center p-5 aspect-square w-[4.5rem] h-[4.5rem] bg-[#FF004D] playfair-display-900 text-white text-2xl">
             R<sup>{intervieweeId}</sup>:
           </div>
           <div className="playfair-display-400 text-lg leading-7 mb-8 bg-black text-white p-4">
