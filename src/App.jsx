@@ -6,11 +6,13 @@ import {
   Interview__Image,
   Interview__QA,
 } from './components/Article';
+import ScrollProgressBar from './components/ScrollProgressBar';
 import Separator from './components/Separator';
 
 function App() {
   return (
     <div className="px-2.5 pt-2 pb-12">
+      <ScrollProgressBar />
       <Article>
         <Article__Header
           imgSrc="https://elpais.com/especiales/2019/frontera-sur/capitulo-1/img/1560851881_870643_1560952176_sumario_normal_recorte1.jpg"
@@ -40,7 +42,7 @@ function App() {
             imgSrc="https://elpais.com/especiales/2019/frontera-sur/capitulo-1/img/entrevista.jpg"
             imgAlt="Retrato de Subdelegado"
           />
-          <div className="relative mt-[-100dvh]">
+          <div className="flex flex-col self-center relative mt-[-100dvh] w-[53rem]">
             <Interview__QA
               question="¿Qué propone para el sargazo? ¿Quiere que el Gobierno envíe gente para su limpieza, como proponen los hoteleros?, pregunto al subdelegado."
               answer="“Que no vengan, esa no es nuestra solución, no, aquí no necesitamos que venga nadie”, contesta. Al subdelegado no le hace ni pizca de gracia la posibilidad de que comiencen a llegar cuadrillas de gente extraña a revolver las playas del pueblo."
