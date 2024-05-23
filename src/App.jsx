@@ -42,7 +42,7 @@ function App() {
             imgSrc="https://elpais.com/especiales/2019/frontera-sur/capitulo-1/img/entrevista.jpg"
             imgAlt="Retrato de Subdelegado"
           />
-          <div className="flex flex-col self-center relative mt-[-100dvh] sm:w-[53rem]">
+          <div className="flex flex-col self-center relative mt-[-100dvh] sm:w-[50rem] px-5 sm:px-0">
             <Interview__QA
               question="¿Qué propone para el sargazo? ¿Quiere que el Gobierno envíe gente para su limpieza, como proponen los hoteleros?, pregunto al subdelegado."
               answer="“Que no vengan, esa no es nuestra solución, no, aquí no necesitamos que venga nadie”, contesta. Al subdelegado no le hace ni pizca de gracia la posibilidad de que comiencen a llegar cuadrillas de gente extraña a revolver las playas del pueblo."
