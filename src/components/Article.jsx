@@ -1,5 +1,3 @@
-import { useRef, useState } from 'react';
-
 function Article(props) {
   return <section className="flex flex-col items-center">{props.children}</section>;
 }
@@ -10,7 +8,7 @@ function Article__Header(props) {
   return (
     <div className="flex flex-col items-center">
       <img src={imgSrc} width="980" height="634" alt={imgAlt} className="sm:max-w-[58rem]" />
-      <span className="fig-caption -rotate-45 border border-t-[2px] border-[#FF004D] w-1/4 w-1/12 relative mb-11" />
+      <span className="fig-caption -rotate-45 border border-t-[2px] border-[#FF004D] w-1/4 sm:w-1/12 relative mb-11" />
       <h3 className="oswald-600 text-[#FF004D] mx-[27%] sm:mx-[32%] uppercase text-center text-[22px] sm:text-5xl text-pretty leading-6 tracking-tighter">
         {title}
       </h3>
@@ -35,7 +33,7 @@ function Interview__Image(props) {
 
   return (
     <div
-      className="h-dvh w-dvw bg-cover bg-center sticky top-0 -z-10'"
+      className="min-h-screen min-w-[100dvw] bg-cover bg-center sticky top-0 -z-10'"
       style={{ backgroundImage: `url(${imgSrc})` }}
       aria-label={imgAlt}
     />
